@@ -1,0 +1,360 @@
+2016-03-23 09:54:28 [boto] ERROR: Caught exception reading instance data
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\boto\utils.py", line 210, in retry_url
+    r = opener.open(req, timeout=timeout)
+  File "C:\Python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "C:\Python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "C:\Python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "C:\Python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "C:\Python27\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: <urlopen error timed out>
+2016-03-23 09:54:28 [boto] ERROR: Unable to read instance data, giving up
+2016-03-23 09:54:37 [scrapy] ERROR: Error caught on signal handler: <bound method ?.close of <AlbbSpider 'albb' at 0x5f3a390>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 150, in maybeDeferred
+    result = f(*args, **kw)
+  File "C:\Python27\lib\site-packages\scrapy\xlib\pydispatch\robustapply.py", line 57, in robustApply
+    return receiver(*arguments, **named)
+  File "F:\alibaba\albb\albb\spiders\albb1.py", line 161, in close
+    print (s2-self.s1)/60 +u'分钟'
+TypeError: unsupported operand type(s) for +: 'float' and 'unicode'
+2016-03-23 09:55:25 [boto] ERROR: Caught exception reading instance data
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\boto\utils.py", line 210, in retry_url
+    r = opener.open(req, timeout=timeout)
+  File "C:\Python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "C:\Python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "C:\Python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "C:\Python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "C:\Python27\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: <urlopen error timed out>
+2016-03-23 09:55:25 [boto] ERROR: Unable to read instance data, giving up
+2016-03-23 09:55:31 [scrapy] ERROR: Error caught on signal handler: <bound method ?.close of <AlbbSpider 'albb' at 0x5c9d6a0>>
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 150, in maybeDeferred
+    result = f(*args, **kw)
+  File "C:\Python27\lib\site-packages\scrapy\xlib\pydispatch\robustapply.py", line 57, in robustApply
+    return receiver(*arguments, **named)
+  File "F:\alibaba\albb\albb\spiders\albb1.py", line 162, in close
+    print (s2-self.s1)/60 +u'分钟'
+TypeError: unsupported operand type(s) for +: 'float' and 'unicode'
+2016-03-23 10:06:50 [boto] ERROR: Caught exception reading instance data
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\boto\utils.py", line 210, in retry_url
+    r = opener.open(req, timeout=timeout)
+  File "C:\Python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "C:\Python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "C:\Python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "C:\Python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "C:\Python27\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: <urlopen error timed out>
+2016-03-23 10:06:50 [boto] ERROR: Unable to read instance data, giving up
+2016-03-23 10:07:20 [scrapy] ERROR: Spider error processing <GET http://au1062063451.trustpass.alibaba.com/productlist.html> (referer: http://www.alibaba.com/catalogs/products/CID70802?spm=a2700.7848340.1998821658.73.4frCkB)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\alibaba\albb\albb\spiders\albb1.py", line 106, in parse_content
+    all_page1=int(all_page)+1
+ValueError: invalid literal for int() with base 10: '1 P'
+2016-03-23 10:07:20 [scrapy] ERROR: Spider error processing <GET http://hugsun.en.alibaba.com/productlist.html> (referer: http://www.alibaba.com/catalogs/products/CID70802?spm=a2700.7848340.1998821658.73.4frCkB)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\alibaba\albb\albb\spiders\albb1.py", line 106, in parse_content
+    all_page1=int(all_page)+1
+ValueError: invalid literal for int() with base 10: '6 P'
+2016-03-23 10:07:21 [scrapy] ERROR: Spider error processing <GET http://gastrocool.trustpass.alibaba.com/productlist.html> (referer: http://www.alibaba.com/catalogs/products/CID100000026?spm=a2700.7848340.1998821658.91.qb0amU)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\alibaba\albb\albb\spiders\albb1.py", line 106, in parse_content
+    all_page1=int(all_page)+1
+ValueError: invalid literal for int() with base 10: '1 P'
+2016-03-23 10:07:21 [scrapy] ERROR: Spider error processing <GET http://tr1064340397.trustpass.alibaba.com/productlist.html> (referer: http://www.alibaba.com/catalogs/products/CID100000026?spm=a2700.7848340.1998821658.91.qb0amU)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\alibaba\albb\albb\spiders\albb1.py", line 106, in parse_content
+    all_page1=int(all_page)+1
+ValueError: invalid literal for int() with base 10: '4 P'
+2016-03-23 10:07:22 [scrapy] ERROR: Error processing {'name': 'Shenzhen Honsungtech Electronic Co., Ltd.',
+ 'product_key1': u'654540-001',
+ 'product_key2': u'sas hdd bracket',
+ 'product_key3': u'hard drive caddy',
+ 'product_name': u'NEW For HP 654540-001 2.5" SSD to 3.5" SATA Adapter Tray Converter SAS HDD Bracket                        ',
+ 'url': 'http://honsungtech.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 45, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:22 [scrapy] ERROR: Spider error processing <GET http://contex.en.alibaba.com/productlist.html> (referer: http://www.alibaba.com/catalogs/products/CID100000011?spm=a2700.7848340.1998821658.90.u6Ucvu)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\alibaba\albb\albb\spiders\albb1.py", line 106, in parse_content
+    all_page1=int(all_page)+1
+ValueError: invalid literal for int() with base 10: '9 P'
+2016-03-23 10:07:22 [scrapy] ERROR: Spider error processing <GET http://dreamwayindustry.en.alibaba.com/productlist.html> (referer: http://www.alibaba.com/catalogs/products/CID100002954?spm=a2700.7848340.1998821658.84.pWkzmP)
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 28, in process_spider_output
+    for x in result:
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "C:\Python27\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 54, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "F:\alibaba\albb\albb\spiders\albb1.py", line 106, in parse_content
+    all_page1=int(all_page)+1
+ValueError: invalid literal for int() with base 10: '7 P'
+2016-03-23 10:07:23 [scrapy] ERROR: Error processing {'name': 'Shenzhen Honsungtech Electronic Co., Ltd.',
+ 'product_key1': u'41y0708',
+ 'product_key2': u'fibre channel hard drive tray',
+ 'product_key3': u'channel hard drive tray',
+ 'product_name': u'For IBM xSeries EXP800 Server Fibre Channel 3.5"Hard Drive Tray / Caddy 39M6036 41Y0708                        ',
+ 'url': 'http://honsungtech.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:23 [scrapy] ERROR: Error processing {'name': 'Shenzhen Honsungtech Electronic Co., Ltd.',
+ 'product_key1': u'new hard drive tray',
+ 'product_key2': u'new  caddy',
+ 'product_key3': u'poweredge  hard drive caddy',
+ 'product_name': u'New For Dell PowerEdge T620 T710 T720 Server Hard Drive Caddy Tray                        ',
+ 'url': 'http://honsungtech.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:23 [scrapy] ERROR: Error processing {'name': 'Shenzhen Honsungtech Electronic Co., Ltd.',
+ 'product_key1': u'371593-001',
+ 'product_key2': u'2.5 hard drive caddy hdd',
+ 'product_key3': u'sata server hard drive caddy',
+ 'product_name': u'2.5" SATA /SAS HDD Hard Drive Tray Caddy for HP 371593-001 DL360 DL380 G5 ML350                        ',
+ 'url': 'http://honsungtech.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:23 [scrapy] ERROR: Error processing {'name': 'Shenzhen Honsungtech Electronic Co., Ltd.',
+ 'product_key1': u'gen server',
+ 'product_key2': u'drive tray lff',
+ 'product_key3': u'server  caddy',
+ 'product_name': u'3.5" G302D 0G302D F238F LFF SAS/SATA Hard Drive Caddy/Tray Gen Server                        ',
+ 'url': 'http://honsungtech.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:25 [scrapy] ERROR: Error processing {'name': 'Guangzhou Newayflash Electronic Technology Limited',
+ 'product_key1': u'2013 new usb hub',
+ 'product_key2': u'2013 new usb hub',
+ 'product_key3': u'2013 new usb hub',
+ 'product_name': u'2013 new usb hub                        ',
+ 'url': 'http://newayflash.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:25 [scrapy] ERROR: Error processing {'name': 'Guangzhou Newayflash Electronic Technology Limited',
+ 'product_key1': u'custom design gift guitar usb stick',
+ 'product_key2': u'custom design gift guitar usb stick',
+ 'product_key3': u'custom design gift guitar usb stick',
+ 'product_name': u'custom design gift guitar usb stick                        ',
+ 'url': 'http://newayflash.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:25 [scrapy] ERROR: Error processing {'name': 'Shenzhen Kingsway Technology Co., Ltd.',
+ 'product_key1': u'4k ultra output android tv box xnxx movies cartoon 2016 high quality',
+ 'product_key2': u't95 4k ultra output android tv box xnxx movies cartoon 2016 high quality',
+ 'product_key3': u'amlogic s905 t95 4k ultra output android tv box xnxx movies cartoon 2016 high quality',
+ 'product_name': u'Wholesale google android 5.1 t95 tv box amlogic s905 t95 4k ultra output android tv box xnxx movies cartoon 2016 high quality                        ',
+ 'url': 'http://kswtek.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:25 [scrapy] ERROR: Error processing {'name': 'Guangzhou Newayflash Electronic Technology Limited',
+ 'product_key1': u'64gb usb 3 0 memory stick',
+ 'product_key2': u'64gb usb 3 0 memory stick',
+ 'product_key3': u'64gb usb 3 0 memory stick',
+ 'product_name': u'64gb usb 3 0 memory stick                        ',
+ 'url': 'http://newayflash.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:26 [scrapy] ERROR: Error processing {'name': 'Guangzhou Newayflash Electronic Technology Limited',
+ 'product_key1': u'usb flash drive 128gb',
+ 'product_key2': u'usb memory',
+ 'product_key3': u'usb stick',
+ 'product_name': u'ballpoint pen design usb flash drive 128gb                        ',
+ 'url': 'http://newayflash.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:26 [scrapy] ERROR: Error processing {'name': 'Guangzhou Newayflash Electronic Technology Limited',
+ 'product_key1': u'usb internet tv stick',
+ 'product_key2': u'usb internet tv stick',
+ 'product_key3': u'usb internet tv stick',
+ 'product_name': u'usb internet tv stick                        ',
+ 'url': 'http://newayflash.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:26 [scrapy] ERROR: Error processing {'name': 'Guangzhou Newayflash Electronic Technology Limited',
+ 'product_key1': u'rubber duck usb flash drive',
+ 'product_key2': u'usb memory',
+ 'product_key3': u'usb disk',
+ 'product_name': u'32gb novelty cartoon rubber duck usb flash drive for joy                        ',
+ 'url': 'http://newayflash.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:26 [scrapy] ERROR: Error processing {'name': 'Guangzhou Newayflash Electronic Technology Limited',
+ 'product_key1': u'cartoon thumb drive',
+ 'product_key2': u'cartoon pen drive',
+ 'product_key3': u'marketing thumb drives',
+ 'product_name': u'Cartoon thumb drive of promotion gifts                        ',
+ 'url': 'http://newayflash.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:26 [scrapy] ERROR: Error processing {'name': 'Guangzhou Newayflash Electronic Technology Limited',
+ 'product_key1': u'taco bell border sauce usb flash drive',
+ 'product_key2': u'usb memory',
+ 'product_key3': u'usb stick',
+ 'product_name': u'oem gift taco bell border sauce usb flash drive                        ',
+ 'url': 'http://newayflash.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:26 [scrapy] ERROR: Error processing {'name': 'Guangzhou Newayflash Electronic Technology Limited',
+ 'product_key1': u'usb flash drive tv player',
+ 'product_key2': u'usb memory',
+ 'product_key3': u'usb stick',
+ 'product_name': u'oem gift usb flash drive media player for tv                        ',
+ 'url': 'http://newayflash.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:27 [scrapy] ERROR: Error processing {'name': 'Guangzhou Newayflash Electronic Technology Limited',
+ 'product_key1': u'wireless usb flash drive',
+ 'product_key2': u'usb memory',
+ 'product_key3': u'usb disk',
+ 'product_name': u'oem gift wireless usb flash drive                        ',
+ 'url': 'http://newayflash.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
+2016-03-23 10:07:27 [scrapy] ERROR: Error processing {'name': 'Shenzhen Kingsway Technology Co., Ltd.',
+ 'product_key1': u'youtube tv box',
+ 'product_key2': u'youtube iptv hbbtv tv box',
+ 'product_key3': u'youtube youpron iptv hbbtv tv box',
+ 'product_name': u'Low price quad core internet wifi m10 metal androidyoutube youpron iptv hbbtv tv box                        ',
+ 'url': 'http://kswtek.en.alibaba.com/productlist.html'}
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 588, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "F:\alibaba\albb\albb\pipelines.py", line 37, in process_item
+    self.Conn.rollback()
+OperationalError: (2006, 'MySQL server has gone away')
