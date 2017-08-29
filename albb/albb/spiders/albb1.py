@@ -24,7 +24,7 @@ class AlbbSpider(scrapy.Spider):
     # rs=cur.fetchall()
     # for i in rs:
     #     urlset.add(i[0])
-    # print u'共取出'+ str(len(urlset)) +u'个'
+    # print u'共取出'+ str(len(urlset)) +u'个11'
     start_urls = (
         #"http://www.alibaba.com/catalogs/products/CID100003238?spm=a2700.7848340.1998821658.13.6ok5j5",
         'http://www.alibaba.com/catalogs/products/CID100005071?spm=a2700.7848340.1998821658.71.Kiy6Re',
